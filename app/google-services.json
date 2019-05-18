@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "215008675884",
+    "firebase_url": "https://rentaride-296ed.firebaseio.com",
+    "project_id": "rentaride-296ed",
+    "storage_bucket": "rentaride-296ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215008675884:android:2779469202786fd0",
+        "android_client_info": {
+          "package_name": "com.example.omkar.rentacar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215008675884-13nrbgvo2po3hcf716856oji8irdij66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkwraZgZFTFsPvLSeoiFzNoyWqg_HwQRg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215008675884:android:f44d672fc6a7cf00",
+        "android_client_info": {
+          "package_name": "com.omkar.kumbhar.rentaride"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215008675884-qacvksv21cc8kqblbf0ag3sesl3b4o25.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.omkar.kumbhar.rentaride",
+            "certificate_hash": "19f83bb6eec4e302d9ea28675ae7febc1099e09b"
+          }
+        },
+        {
+          "client_id": "215008675884-13nrbgvo2po3hcf716856oji8irdij66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkwraZgZFTFsPvLSeoiFzNoyWqg_HwQRg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215008675884-13nrbgvo2po3hcf716856oji8irdij66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.CitySelectionFragment">
+
+    <AutoCompleteTextView
+        android:id="@+id/edtCity"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/design_edittext"/>
+
+    <ImageView
+        android:id="@+id/btnLocation"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/edtCity"
+        android:layout_alignBottom="@+id/edtCity"
+        android:layout_alignRight="@+id/edtCity"
+        android:src="@drawable/ic_map" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyCitie"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edtCity"
+        android:layout_above="@+id/btnSubmit"
+        />
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:layout_alignParentBottom="true"
+        android:text="SUBMIT"/>
+
+</RelativeLayout>

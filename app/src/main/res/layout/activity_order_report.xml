@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.OrderReport">
+    <ImageView
+        android:id="@+id/ReportImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_directions_car_black_24dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/ReportImage">
+
+        <TextView
+            android:id="@+id/ReportCarName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:text="Rolls Royce Sweptail "
+            android:paddingStart="5dp"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+        <TextView
+            android:id="@+id/ReportSeater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ReportCarName"
+            android:paddingStart="5dp"
+            android:textColor="#000000"
+            android:text="Seater : 5"/>
+        <TextView
+            android:id="@+id/RuppeeSighn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="72dp"
+            android:textColor="#0E7820"
+            android:text="@string/ruppee"
+            android:layout_marginBottom="8dp"
+            android:textSize="35sp"/>
+        <TextView
+            android:id="@+id/ReportPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="72dp"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="3dp"
+            android:layout_toEndOf="@+id/RuppeeSighn"
+            android:textSize="30sp"
+            android:textColor="#0E7820"
+            android:text="15000/km"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/StartTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReportImage"
+        android:textColor="#FFFFFF  "
+        android:textSize="17sp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/textview_deighn"
+        android:text="Start Trip"/>
+    <TextView
+        android:id="@+id/ReportStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReportImage"
+        android:layout_toEndOf="@id/StartTrip"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/report_textview_time"
+        android:text="4:00 PM,10 Jan,2019"/>
+    <ImageView
+        android:id="@+id/ImageArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReportStartTime"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_arrow_downward_black_24dp"
+        />
+    <TextView
+        android:id="@+id/EndTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ImageArrow"
+        android:textColor="#FFFFFF  "
+        android:textSize="17sp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/textview_deighn"
+        android:text="End Trip"/>
+
+    <TextView
+        android:id="@+id/ReportEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ImageArrow"
+        android:layout_toEndOf="@id/EndTrip"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/report_textview_time"
+        android:text="10:00 PM,10 Jan,2019" />
+
+
+    <fragment
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="150dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/EndTrip"
+        />
+    <TextView
+        android:id="@+id/PaymentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/mapView"
+        android:layout_marginTop="2dp"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:background="#0E7DC8"
+        android:gravity="center"
+        android:text="Payment Details"
+        />
+
+    <TextView
+        android:id="@+id/payableAmount"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:textSize="17sp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/PaymentDetails"
+        android:gravity="center"
+        android:background="#0E7DC8"
+        android:textColor="#FFFFFF"
+        android:text="Payable Amount"/>
+
+    <TextView
+        android:id="@+id/ReportPayableAmount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:textSize="19sp"
+        android:layout_below="@+id/PaymentDetails"
+        android:textColor="#0A6610"
+        android:background="#969699"
+        android:gravity="center"
+        android:layout_toEndOf="@id/payableAmount"
+        android:text="@string/ruppee"/>
+
+    <Button
+        android:id="@+id/ReportBtnPay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:textSize="17sp"
+        android:text="PROCCED TO PAYMENT" />
+
+</RelativeLayout>

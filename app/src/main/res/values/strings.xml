@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">RentARide</string>
+
+    <string-array name="seater">
+        <item>Select Seater</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>25</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="ExpiryMonth">
+        <item>Expiry Month</item>
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sept</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="ExpiryYear">
+        <item>Expiry Year</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+    <string-array name="CardType">
+        <item>Debit Card</item>
+        <item>Visa</item>
+        <item>Master Card</item>
+        <item>Rupay</item>
+    </string-array>
+
+    <string-array name="FuelType">
+        <item>Select Fuel</item>
+        <item>CNG</item>
+        <item>Petrol</item>
+        <item>Diesel</item>
+    </string-array>
+
+    <string-array name="VehicleType">
+        <item>Select Vehicle Type</item>
+        <item>Car</item>
+        <item>Bike</item>
+        <item>Bus</item>
+    </string-array>
+
+
+    <string name="ruppee">\u20B9</string>
+    <string name="Sign_up_or_login">Sign up or Login</string>
+
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">771999999834868</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">e8f3ee591fce885dbf3b500490a1b872</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBFaHdcv5fy_HCS5m-5wg74dT4iXP-V1J4</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddPaymentMethod">
+    <TextView
+        android:id="@+id/paymentMethod"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#0E7DC8"
+        android:gravity="center"
+        android:text="Payment Methods"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:id="@+id/CardPaymentView"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@id/paymentMethod"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        >
+        <RadioButton
+            android:id="@+id/CardPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Payment"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/CardHolderName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/CardPayment"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/design_edittext"
+            android:hint=" Card Holder Name"
+            android:inputType="textPersonName"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/CardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="2dp"
+            android:inputType="number"
+            android:maxLength="16"
+            android:background="@drawable/design_edittext"
+            android:layout_below="@+id/CardHolderName"
+            android:drawableRight="@drawable/ic_card"
+            android:paddingEnd="10dp"
+            android:hint=" Card Number"/>
+        <Spinner
+            android:id="@+id/CardExpiryMon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardNumber"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:spinnerMode="dialog"
+            android:layout_alignParentLeft="true"
+            android:entries="@array/ExpiryMonth"
+            />
+        <Spinner
+            android:id="@+id/CardExpiryYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardNumber"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_toRightOf="@+id/CardExpiryMon"
+            android:layout_marginEnd="50dp"
+            android:spinnerMode="dialog"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentRight="true"
+            android:entries="@array/ExpiryYear"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:minHeight="80dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@+id/CardPaymentView"
+        android:background="@android:drawable/dialog_holo_light_frame">
+        <RadioButton
+            android:id="@+id/DebitPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debit Card"
+            android:textSize="15sp"/>
+        <Spinner
+            android:id="@+id/DebitCardType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            android:entries="@array/CardType"
+            android:layout_below="@+id/DebitPayment"/>
+
+        <EditText
+            android:id="@+id/DebitHolderName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/DebitCardType"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/design_edittext"
+            android:hint=" Debit Holder Name"
+            android:inputType="textPersonName"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/DebitNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="2dp"
+            android:paddingEnd="10dp"
+            android:inputType="number"
+            android:maxLength="16"
+            android:background="@drawable/design_edittext"
+            android:drawableRight="@drawable/ic_credit_card"
+            android:layout_below="@+id/DebitHolderName"
+            android:hint=" Debit Number"/>
+        <Spinner
+            android:id="@+id/DebitExpiryMon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DebitNumber"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentLeft="true"
+            android:spinnerMode="dialog"
+            android:entries="@array/ExpiryMonth"
+            />
+        <Spinner
+            android:id="@+id/DebitExpiryYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DebitNumber"
+            android:layout_toRightOf="@+id/DebitExpiryMon"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="2dp"
+            android:spinnerMode="dialog"
+            android:layout_alignParentRight="true"
+            android:entries="@array/ExpiryYear"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/ReportBtnPay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="0dp"
+        android:textSize="25sp"
+        android:text="ADD" />
+
+
+</RelativeLayout>

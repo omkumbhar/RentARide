@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ResultImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentTop="true"
+
+        android:src="@drawable/ic_directions_car_black_24dp"/>
+    <TextView
+        android:id="@+id/ResultName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name of the result"
+        android:layout_toRightOf="@+id/ResultImage"
+        android:textSize="19sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/ResultFromTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ResultName"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/ResultImage"
+        android:text="Frome " />
+    <TextView
+        android:id="@+id/ResultTillTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ResultFromTime"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/ResultImage"
+        android:text="To"/>
+    <TextView
+        android:id="@+id/ResultFuelType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ResultTillTime"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/ResultImage"
+        android:text="Fuel Type"/>
+    <TextView
+        android:id="@+id/ResultPrice"
+        android:layout_width="105dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/ResultName"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000"
+        android:text="@string/ruppee"
+        android:textSize="35sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_toEndOf="@id/ResultImage"
+        android:layout_below="@id/ResultPrice"
+        android:background="#B6B6BC"
+        />
+</RelativeLayout>

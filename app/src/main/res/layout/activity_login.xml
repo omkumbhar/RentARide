@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/textView"
+        android:layout_alignParentLeft="true" />
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/design_edittext"
+        android:paddingStart="3dp"
+        android:layout_height="40dp"
+        android:hint=" Username"
+        android:layout_marginLeft="40dp"
+        android:drawableLeft="@drawable/ic_account"/>
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/design_edittext"
+        android:drawableLeft="@drawable/ic_key"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:paddingStart="3dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/edtPass"
+        android:text="LOGIN"
+        android:background="@drawable/button_shape"/>
+
+
+    <com.facebook.login.widget.LoginButton
+        xmlns:facebook="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btnFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        android:layout_toEndOf="@id/google_sign_in_button"
+        facebook:com_facebook_login_text=" Facebook" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:text="CONNECT WITH USING"
+        android:textSize="14sp"
+         />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_below="@id/btnLogin"
+        android:layout_height="1.2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        ></View>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:text="OR"
+         />
+
+    <TextView
+        android:id="@+id/newHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/google_sign_in_button"
+        android:text="NEW HERE?" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/newHere"
+        android:background="@drawable/button_shape"
+        android:text="CREATE AN ACCOUNT"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtPass"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:text="Forgot your password?"
+        android:textStyle="italic"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp" />
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="SKIP"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true" />
+
+
+
+</RelativeLayout>

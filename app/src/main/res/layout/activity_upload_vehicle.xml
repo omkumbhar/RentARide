@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UploadVehicleActivity">
+
+    <ImageView
+        android:id="@+id/vehicleImg"
+        android:layout_width="310dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/design_edittext"
+        />
+    <TextView
+        android:id="@+id/ChooseImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/vehicleImg"
+        android:layout_centerHorizontal="true"
+        android:text="Choose Image"/>
+
+    <EditText
+        android:id="@+id/vehicleName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ChooseImg"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/design_edittext"
+        android:hint="Vehicle Name"
+        android:maxLength="50"
+        android:paddingStart="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/vehicleLocation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/vehicleName"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/design_edittext"
+        android:hint="Vehicle Location"
+        android:maxLength="50"
+        android:paddingStart="5dp"
+        android:singleLine="true" />
+    <ImageView
+        android:id="@+id/btnLocation"
+        android:layout_width="50dp"
+        android:layout_height="37dp"
+        android:layout_alignTop="@+id/vehicleLocation"
+        android:layout_alignBottom="@+id/vehicleLocation"
+        android:layout_alignRight="@+id/vehicleLocation"
+        android:src="@drawable/ic_map" />
+
+    <EditText
+        android:id="@+id/vehicleRent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/vehicleLocation"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/design_edittext"
+        android:drawableStart="@drawable/ic_rupee_indian"
+        android:hint="Vehicle Rent"
+        android:inputType="number"
+        android:maxLength="50"
+        android:paddingStart="5dp"
+        android:singleLine="true" />
+    <Spinner
+        android:id="@+id/vehicleSeater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:entries="@array/seater"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/vehicleRent"
+        />
+    <Spinner
+        android:id="@+id/vehicleFuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:layout_marginEnd="18dp"
+        android:entries="@array/FuelType"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/vehicleRent"
+        />
+    <Spinner
+        android:id="@+id/vehicleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/VehicleType"
+        android:layout_below="@id/vehicleFuel"
+        />
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_shape"
+        android:text="UPLOAD"/>
+
+</RelativeLayout>

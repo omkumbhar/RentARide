@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment">
+
+    <Button
+        android:id="@+id/Car"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_shape"
+        android:text="CAR"
+        android:drawableLeft="@drawable/car"
+        android:paddingLeft="7dp"
+        android:paddingRight="60dp"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/Bike"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/Car"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/bike"
+        android:paddingRight="60dp"
+        android:paddingLeft="7dp"
+        android:text="BIKE"
+        android:textSize="25dp"/>
+    <Button
+        android:id="@+id/Bus"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/Bike"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/bus"
+        android:paddingRight="60dp"
+        android:paddingLeft="7dp"
+        android:text="BUS"
+        android:textSize="25dp"/>
+
+</RelativeLayout>

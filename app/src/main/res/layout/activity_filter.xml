@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FilterActivity">
+    <EditText
+        android:id="@+id/edtSource"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp"
+        android:layout_height="40dp"
+        android:background="@drawable/design_edittext"
+        android:hint="CHOOSE STARTING POINT"/>
+
+    <ImageButton
+        android:id="@+id/btnSource"
+        android:layout_width="48dp"
+        android:layout_height="47dp"
+        android:background="@drawable/location_button"
+        android:src="@drawable/ic_map"
+        android:layout_alignTop="@id/edtSource"
+        android:layout_alignBottom="@+id/edtSource"
+        android:layout_alignRight="@+id/edtSource"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:text="From"
+        android:textSize="17sp"/>
+
+
+    <EditText
+        android:id="@+id/StartingDate"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/design_edittext"
+
+        android:drawableRight="@drawable/ic_calendar"
+        android:hint="Starting Date"
+        android:cursorVisible="false"
+        android:inputType="none"
+        android:paddingLeft="5dp" />
+
+    <EditText
+        android:id="@+id/StartingTime"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/design_edittext"
+        android:drawableRight="@drawable/ic_time"
+        android:hint="Starting Time"
+        android:cursorVisible="false"
+        android:inputType="none"
+        android:paddingStart="5dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="12dp"
+        android:text="To" />
+    <EditText
+        android:id="@+id/EndingDate"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:hint="Ending Date"
+        android:cursorVisible="false"
+        android:inputType="none"
+        android:layout_below="@+id/textView5"
+        android:background="@drawable/design_edittext"
+        android:drawableRight="@drawable/ic_calendar"/>
+
+    <EditText
+        android:id="@+id/EndingTime"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:cursorVisible="false"
+        android:inputType="none"
+        android:background="@drawable/design_edittext"
+        android:drawableRight="@drawable/ic_time"
+        android:hint="EndingTime" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EndingDate"
+        android:layout_marginTop="18dp"
+        android:layout_alignStart="@+id/edtSource"
+        android:layout_centerVertical="true"
+        android:text="Number of seats :"
+        android:textSize="18sp"/>
+
+    <Spinner
+        android:id="@+id/spiSeater"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/EndingDate"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_centerVertical="true"
+        android:animateLayoutChanges="true"
+        android:paddingLeft="50dp"
+        android:entries="@array/seater"/>
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_shape"
+        android:layout_below="@id/EndingTime"
+        android:text="SEARCH CARS"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="19sp"/>
+
+</RelativeLayout>
